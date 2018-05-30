@@ -1,4 +1,4 @@
-%META:TOPICINFO{author="micha" comment="reprev" date="1527683039" format="1.1" reprev="2" version="2"}%
+%META:TOPICINFO{author="ProjectContributor" comment="" date="1527683603" format="1.1"  version="1"}%
 ---+!! %TOPIC%
 %$SHORTDESCRIPTION%
 
@@ -85,7 +85,7 @@ may be added to the element.
 %META:FIELD{name="License" title="License" value="GPL ([[http://www.gnu.org/copyleft/gpl.html][GNU General Public License]])"}%
 %META:FIELD{name="Home" title="Home" value="https://foswiki.org/Extensions/%25$ROOTMODULE%25"}%
 %META:FIELD{name="Support" title="Support" value="https://foswiki.org/Support/%25$ROOTMODULE%25"}%
-%META:FILEATTACHMENT{name="example.png" attachment="example.png" attr="" comment="" date="1527681828" size="10041" user="micha" version="1"}%
+%META:FILEATTACHMENT{name="example.png" attachment="example.png" attr="" comment="" date="1527683603" size="10041" user="ProjectContributor" version="1"}%
 %META:PREFERENCE{name="NATSKIN_BANNERCELLSIZE" title="NATSKIN_BANNERCELLSIZE" type="Local" value="30"}%
 %META:PREFERENCE{name="NATSKIN_BANNERPARTICLESCOLOR" title="NATSKIN_BANNERPARTICLESCOLOR" type="Local" value="#ffffff"}%
 %META:PREFERENCE{name="NATSKIN_BANNERSPEED" title="NATSKIN_BANNERSPEED" type="Local" value="0.5"}%
