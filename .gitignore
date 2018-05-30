@@ -1,0 +1,14 @@
+*,v
+.changes
+igp_*
+*.swp
+pub/System/JQRCodeContrib/git/
+pub/System/JQRCodeContrib/pkg.js
+pub/System/JQRCodeContrib/pkg.js.gz
+/JQRCodeContrib.md5
+/JQRCodeContrib.sha1
+/JQRCodeContrib.tgz
+/JQRCodeContrib.txt
+/JQRCodeContrib.zip
+/JQRCodeContrib_installer
+/JQRCodeContrib_installer.pl

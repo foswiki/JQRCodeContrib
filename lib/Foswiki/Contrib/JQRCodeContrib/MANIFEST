@@ -1,0 +1,12 @@
+!noci
+data/System/JQRCodeContrib.txt 0644
+lib/Foswiki/Contrib/JQRCodeContrib/Config.spec 0644
+lib/Foswiki/Contrib/JQRCodeContrib/Core.pm 0644
+lib/Foswiki/Contrib/JQRCodeContrib/DEPENDENCIES 0644
+lib/Foswiki/Contrib/JQRCodeContrib.pm 0644
+pub/System/JQRCodeContrib/init.uncompressed.js 0644
+pub/System/JQRCodeContrib/jquery-qrcode.uncompressed.js 0644
+pub/System/JQRCodeContrib/Makefile 0644
+pub/System/JQRCodeContrib/pkg.js 0644
+pub/System/JQRCodeContrib/pkg.js.gz 0644
+pub/System/JQRCodeContrib/pkg.uncompressed.js 0644

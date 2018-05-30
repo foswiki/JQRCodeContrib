@@ -1,0 +1,93 @@
+%META:TOPICINFO{author="micha" comment="reprev" date="1527683039" format="1.1" reprev="2" version="2"}%
+---+!! %TOPIC%
+%$SHORTDESCRIPTION%
+
+%TOC%
+
+This plugin lets you generate QR codes of arbitrary content. Simply surround a text fragment with a DIV element of class =qrcode=.
+It is based on the [[https://larsjung.de/jquery-qrcode/][jQuery-qrcode plugin by Lars Jung]].
+
+---++ Examples
+
+*You type*:
+
+<verbatim class="tml">
+%JQREQUIRE{"qrcode"}% <!-- specified only once per page -->
+...
+<div class="qrcode" data-size="200" data-ec-level="L">
+BEGIN:VCARD
+VERSION:3.0
+N:Person;Test;;;
+FN:Test  Person
+ORG:Snake Oil Department
+TITLE:
+TEL;TYPE=WORK:12345
+TEL;TYPE=CELL:123456
+TEL;TYPE=FAX:1234567
+EMAIL:foo@bar.com
+END:VCARD
+</div>
+</verbatim>
+
+%JQREQUIRE{"qrcode" warn="off"}%
+
+%IF{"context QRCodeRegistered"
+   then="*You get:*$n$n<div class='qrcode' data-size='200' data-ec-level='L'>
+BEGIN:VCARD
+VERSION:3.0
+N:Person;Test;;;
+FN:Test  Person
+ORG:Snake Oil Department
+TITLE:
+TEL;TYPE=WORK:12345
+TEL;TYPE=CELL:123456
+TEL;TYPE=FAX:1234567
+EMAIL:foo@bar.com
+END:VCARD
+</div>"
+   else="*You get (if installed):*$n$n<img src='%PUBURLPATH%/System/JQRCodeContrib/example.png' width='200' height='200' alt='qrcode' />"
+}%
+
+---++ Syntax
+
+The output of the QR code generator can be customized using HTML5 data parameters as can be seen in above example.
+Add the css class =qrcode= to a DOM node (such as a DIV element) to aktivate the generator.
+Here are a couple of most useful parameters.
+
+| *Parameter* | *Description* | *Default* |
+| =data-size= | size in pixel of the image being generated | 100 |
+| =data-ec-level= | error correction level; can be =L=, =M=, =Q= or =H= | H |
+| =data-fill= | foreground color of the image | #000 |
+| =data-background= |  null for transparent background | null |
+
+See [[https://larsjung.de/jquery-qrcode/][the full list of all parameters]] that
+may be added to the element.
+
+---++ Installation Instructions
+
+%$INSTALL_INSTRUCTIONS%
+
+---++ Dependencies
+%$DEPENDENCIES%
+
+---++ Change History
+
+%TABLE{columnwidths="7em" tablewidth="100%"}%
+|  30 May 2018 | initial version |
+
+%META:FORM{name="PackageForm"}%
+%META:FIELD{name="Author" title="Author" value="Michael Daum"}%
+%META:FIELD{name="Version" title="Version" value="%25$VERSION%25"}%
+%META:FIELD{name="Release" title="Release" value="%25$RELEASE%25"}%
+%META:FIELD{name="Description" title="Description" value=""}%
+%META:FIELD{name="Repository" title="Repository" value="https://github.com/foswiki/%25$ROOTMODULE%25"}%
+%META:FIELD{name="Copyright" title="Copyright" value="2018, Michael Daum, All Rights Reserved"}%
+%META:FIELD{name="License" title="License" value="GPL ([[http://www.gnu.org/copyleft/gpl.html][GNU General Public License]])"}%
+%META:FIELD{name="Home" title="Home" value="https://foswiki.org/Extensions/%25$ROOTMODULE%25"}%
+%META:FIELD{name="Support" title="Support" value="https://foswiki.org/Support/%25$ROOTMODULE%25"}%
+%META:FILEATTACHMENT{name="example.png" attachment="example.png" attr="" comment="" date="1527681828" size="10041" user="micha" version="1"}%
+%META:PREFERENCE{name="NATSKIN_BANNERCELLSIZE" title="NATSKIN_BANNERCELLSIZE" type="Local" value="30"}%
+%META:PREFERENCE{name="NATSKIN_BANNERPARTICLESCOLOR" title="NATSKIN_BANNERPARTICLESCOLOR" type="Local" value="#ffffff"}%
+%META:PREFERENCE{name="NATSKIN_BANNERSPEED" title="NATSKIN_BANNERSPEED" type="Local" value="0.5"}%
+%META:PREFERENCE{name="NATSKIN_BANNERMAXPARTICLES" title="NATSKIN_BANNERMAXPARTICLES" type="Local" value="70"}%
+%META:PREFERENCE{name="NATSKIN_BANNERSIZEVARIATION" title="NATSKIN_BANNERSIZEVARIATION" type="Local" value="3"}%
