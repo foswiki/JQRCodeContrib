@@ -1,4 +1,4 @@
-%META:TOPICINFO{author="ProjectContributor" comment="" date="1527683603" format="1.1"  version="1"}%
+%META:TOPICINFO{author="ProjectContributor" comment="" date="1545040934" format="1.1" version="1"}%
 ---+!! %TOPIC%
 %$SHORTDESCRIPTION%
 
@@ -45,7 +45,7 @@ TEL;TYPE=FAX:1234567
 EMAIL:foo@bar.com
 END:VCARD
 </div>"
-   else="*You get (if installed):*$n$n<img src='%PUBURLPATH%/System/JQRCodeContrib/example.png' width='200' height='200' alt='qrcode' />"
+   else="*You get (if installed):*$n$n<img src='%PUBURLPATH%/%WEB%/JQRCodeContrib/example.png' width='200' height='200' alt='qrcode' />"
 }%
 
 ---++ Syntax
@@ -73,6 +73,7 @@ may be added to the element.
 ---++ Change History
 
 %TABLE{columnwidths="7em" tablewidth="100%"}%
+|  17 Dec 2018 | prevent flickering when generating the code; fix dependencies; docu fixes |
 |  30 May 2018 | initial version |
 
 %META:FORM{name="PackageForm"}%
@@ -85,9 +86,4 @@ may be added to the element.
 %META:FIELD{name="License" title="License" value="GPL ([[http://www.gnu.org/copyleft/gpl.html][GNU General Public License]])"}%
 %META:FIELD{name="Home" title="Home" value="https://foswiki.org/Extensions/%25$ROOTMODULE%25"}%
 %META:FIELD{name="Support" title="Support" value="https://foswiki.org/Support/%25$ROOTMODULE%25"}%
-%META:FILEATTACHMENT{name="example.png" attachment="example.png" attr="" comment="" date="1527683603" size="10041" user="ProjectContributor" version="1"}%
-%META:PREFERENCE{name="NATSKIN_BANNERCELLSIZE" title="NATSKIN_BANNERCELLSIZE" type="Local" value="30"}%
-%META:PREFERENCE{name="NATSKIN_BANNERPARTICLESCOLOR" title="NATSKIN_BANNERPARTICLESCOLOR" type="Local" value="#ffffff"}%
-%META:PREFERENCE{name="NATSKIN_BANNERSPEED" title="NATSKIN_BANNERSPEED" type="Local" value="0.5"}%
-%META:PREFERENCE{name="NATSKIN_BANNERMAXPARTICLES" title="NATSKIN_BANNERMAXPARTICLES" type="Local" value="70"}%
-%META:PREFERENCE{name="NATSKIN_BANNERSIZEVARIATION" title="NATSKIN_BANNERSIZEVARIATION" type="Local" value="3"}%
+%META:FILEATTACHMENT{name="example.png" attachment="example.png" attr="" comment="" date="1545040934" size="10041" user="ProjectContributor" version="1"}%

@@ -1,5 +1,5 @@
 FOSWIKI_ROOT?=~/foswiki/core
-TARGET=pkg.js 
+TARGET=pkg.js qrcode.css
 PKG_JS_SOURCE=jquery-qrcode.uncompressed.js init.uncompressed.js
 
 -include $(FOSWIKI_ROOT)/pub/System/JQueryPlugin/Makefile.include

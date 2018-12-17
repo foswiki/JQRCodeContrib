@@ -10,7 +10,7 @@ jQuery(function($) {
           text = $this.text(),
           opts = $.extend({text: text}, defaults, $this.data());
       $this.empty();
-      $this.addClass("qrcode_inited");
       $this.qrcode(opts);
+      $this.addClass("qrcode_inited");
    });
 });

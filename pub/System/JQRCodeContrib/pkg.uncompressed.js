@@ -2335,15 +2335,14 @@
 jQuery(function($) {
    var defaults = {
       "size": 100,
-      "ecLevel": "H",
-      "color": "#3a3",
+      "ecLevel": "H"
    };
    $(".qrcode:not(.qrcode_inited)").livequery(function() {
       var $this = $(this),
           text = $this.text(),
           opts = $.extend({text: text}, defaults, $this.data());
       $this.empty();
-      $this.addClass("qrcode_inited");
       $this.qrcode(opts);
+      $this.addClass("qrcode_inited");
    });
 });

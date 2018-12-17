@@ -20,8 +20,8 @@ use warnings;
 
 use Foswiki::Func ();
 
-our $VERSION = '1.00';
-our $RELEASE = '30 May 2018';
+our $VERSION = '1.10';
+our $RELEASE = '17 Dec 2018';
 our $SHORTDESCRIPTION = 'QR code generator';
 our $NO_PREFS_IN_TOPIC = 1;
 

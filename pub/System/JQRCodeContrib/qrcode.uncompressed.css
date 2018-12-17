@@ -1,0 +1,6 @@
+.qrcode {
+  display:none;
+}
+.qrcode_inited {
+  display:block;
+}

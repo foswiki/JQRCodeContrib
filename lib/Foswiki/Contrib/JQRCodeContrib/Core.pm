@@ -33,6 +33,7 @@ sub new {
       javascript => ['pkg.js'],
       puburl => '%PUBURLPATH%/%SYSTEMWEB%/JQRCodeContrib',
       dependencies => ['livequery'],
+      css => ['qrcode.css'],
     ),
     $class
   );
